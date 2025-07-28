@@ -10,7 +10,7 @@ function closeModal() {
     document.getElementById('loginError').innerText = "";
 }
 
-function login() {
+function login() {   
     const player1Username = document.getElementById('player1Username').value.trim();
     const player1Password = document.getElementById('player1Password').value.trim();
     const player2Username = document.getElementById('player2Username').value.trim();
@@ -80,3 +80,5 @@ function runnerLogin() {
     // מעבר למשחק Runner (ודא שיש קובץ index.html עבור Runner)
     window.location.href = "RUNNER/HTML/index.html";
 }
+function openboolpgiah()//בול פגיעה
+ {window.location.href = "Stamp damage/HTML/index.html";}

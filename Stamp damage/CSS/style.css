@@ -1,0 +1,117 @@
+body{
+   font-family: Heebo; /*סוג הכתב*/
+   background-attachment:local; 
+   background-repeat:no-repeat;
+   background-size: cover;
+   display: block;
+   background-attachment:fixed;
+   background-image:linear-gradient(to right,
+   rgb(255, 0, 0), rgb(255, 165, 0), rgb(255, 255, 0), rgb(0, 128, 0), rgb(0, 0, 255), indigo, rgb(238, 130, 238));/*צבע הכפתור*/ 
+   background-attachment:fixed;
+}
+.btn{/*עיגולים של הצג תשובה ומשחק חדש*/
+    width:12rem;
+    height: 4rem; 
+    /*padding: 1rem 1rem;*/
+    margin-top: 1rem;/*רווח בין העיגולים של משחק משחק מחדש והצג תשובה*/
+    text-align: center;
+    border-radius:1rem;/*מעגל */
+    color: rgb(7, 5, 5);/*צבע האותיות*/
+    background-image:linear-gradient(to right,
+    rgb(255, 0, 0), rgb(255, 165, 0), rgb(255, 255, 0), rgb(0, 128, 0), rgb(0, 0, 255), indigo, rgb(238, 130, 238));/*צבע הכפתור*/ 
+    background-attachment:fixed;
+}
+article{
+    margin: auto;
+}
+ .color:hover{
+     opacity: 0.8;/*מחליש כל צבע במערך כשעומדים עליו*/
+ }
+ .color{
+    width: 6rem;/*רוחב כל עיגול בצבעים*/
+    height: 6rem; /*אורך כל עיגול בצבעים*/
+    border-radius:100rem ;/*עיגול הצבעים לבחירה*/
+    border: none;
+    margin-left: 1rem;/*רווח בין הצבעים*/
+ }
+ .guesHide{/*כפתורי צבעי הניחוש*/
+    width:5rem;
+    height: 5rem; 
+    border-radius:5rem;
+    background-color: transparent;/*עושה שהכפתורים יהיו שקופים עד שמקבלים צבע*/
+    border: none;
+    margin-left: 1rem;/*רווח בין כפתור לכפתור*/
+ }
+ legend{/*גודל הכתב במסגרות*/
+    font-size: 2rem;
+    font-weight: 100;
+}
+#h1{/*גודל כותרת בול פגיעה*/
+    font-size: 4rem; 
+}
+header{/*כותרת בול פגיעה*/
+    text-align: center; 
+    direction: rtl;
+}
+    #ans{/*כפתור תשובה*/
+        display: none;
+    }
+ /* היסטוריה */
+ .h{
+    width: 2.6rem;
+    height: 2.6rem; 
+    margin-left: 1rem;/*רווח בין הצבעים*/
+    background-color: transparent;/*עושה שהכפתורים יהיו שקופים עד שמקבלים צבע*/
+    border:none;
+    font-size: 2.5rem;/*גודל המספרים - ניקוד מספר בול ופגיעה*/
+    font-family: Heebo;/*סוג הכתב*/
+    font-weight:100;/*גובה הכתב?*/
+    border-radius: 100rem;
+    text-align: center;/*התוכן בהיסטוריה יהיה באמצע*/
+}
+ /*  כמה בול וכמה פגיעה מתחת  לכפתורים */
+.points{
+    text-align: center;
+    padding: 1rem 3rem;/*רווח ואורך בתוך הכפתור*/
+    font-family: Heebo;/*סוג הכתב*/
+    font-size: 1.6rem;/*גודל הכתב*/
+    margin-left: 0.6rem;/*רווח בינהם */
+    font-weight: 100;
+    width:10rem;/*רוחב העיגול עם המיספור*/
+    height: 1.5rem; 
+    border-radius: 100rem;
+    background-image:linear-gradient(to right,
+    rgb(255, 0, 0), rgb(255, 165, 0), rgb(255, 255, 0), rgb(0, 128, 0), rgb(0, 0, 255), indigo, rgb(238, 130, 238));/*צבע הכפתור*/ 
+    background-attachment:fixed;
+    color: rgb(102, 98, 101);/*צבע האותיות בהצגת בול ופגיעה*/
+}
+article{/*מסגרת למערך צבעים */
+    margin: auto;/*מסגרת אוטומטית*/
+    text-align: center;/*כיתוב בתוך מסגרת*/
+    width:45rem;/*רוחב מסגרות צבעים*/
+}
+.spacer {
+    width: 9rem; /* רווח קבוע */
+    display: inline-block;
+}
+.History{/*מסגרת היסטוריה*/
+    width:30rem;/*רוחב מסגרות צבעים*/ 
+  
+}
+nav { grid-area: nav; }
+footer  { grid-area: footer; }
+article { grid-area: article; }
+.grid {
+    display: grid;
+    grid-template-areas:
+      ' article article article nav' 
+      ' n n n nav'
+      ' footer footer footer nav';
+    padding: 3.5rem;
+  }
+  .grid {
+    text-align: center;
+  }
+label{/*המילה תשובה*/
+    font-size: 6rem;
+}
