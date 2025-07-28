@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>עולם המשחקים</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="login.js"></script>
+</head>
+<body>
+  <section id="hero">
+    <h2>ברוכים הבאים לעולם המשחקים הדיגיטלים</h2>
+  </section>
+
+  <section id="games">
+    <h2>המשחקים שלנו</h2>
+    <div class="games-grid">
+      <div class="game-card" onclick="openRunnerModal()">
+        <h3>מרוץ על הים</h3>
+        <p>רוצו ואספו מטבעות תוך הימנעות ממכשיפות!</p>
+      </div>
+      <div class="game-card" onclick="openModal('memory')">
+        <h3>משחק זיכרון </h3>
+        <p>התאם את הפירות במשחק הזיכרון הזה!</p>
+      </div>
+      <div class="game-card">
+        <h3>בול פגיעה</h3>
+        <p>דייק את בחירת הצבעים במשחק בול פגיעה הזה!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- חלונית התחברות למשחק זיכרון -->
+  <div id="loginModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>התחברות למשחק</h2>
+      <h3>שחקן 1</h3>
+      <input type="text" id="player1Username" placeholder="שם משתמש שחקן 1">
+      <input type="password" id="player1Password" placeholder="סיסמה שחקן 1">
+      <h3>שחקן 2</h3>
+      <input type="text" id="player2Username" placeholder="שם משתמש שחקן 2">
+      <input type="password" id="player2Password" placeholder="סיסמה שחקן 2">
+      <button onclick="login()">היכנס</button>
+      <div id="loginError" style="color:red; margin-top:10px;"></div>
+    </div>
+  </div>
+
+  <!-- חלונית התחברות ל-Runner Dash -->
+  <div id="runnerLoginModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeRunnerModal()">&times;</span>
+      <h2>התחברות למשחק ריצה</h2>
+      <input type="text" id="runnerUsername" placeholder="שם משתמש">
+      <input type="password" id="runnerPassword" placeholder="סיסמה">
+      <button onclick="runnerLogin()">היכנס</button>
+      <div id="runnerLoginError" style="color:red; margin-top:10px;"></div>
+    </div>
+  </div>
+</body>
+</html>

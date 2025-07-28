@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../IMAGE/buckground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#game {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+canvas#gameCanvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#score {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  color: yellow;
+  z-index: 2;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#gameOver {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  background: rgba(56, 243, 10, 0.895);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  z-index: 10;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#gameOver p {
+  margin: 5px 0; /* מרווח בין השורות */
+}
+
+#highScore {
+  font-size: 24px; /* קצת קטן יותר מהטקסט הראשי */
+}
+
+.hidden {
+  display: none;
+}
+
+#restartBtn {
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: none;
+  background: #fc079a;
+  color: #fffdfe;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+/* מסיר מסגרת מכל אלמנט */
+* {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* מונע גלישה של אלמנטים מה-canvas */
+canvas, img {
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: contain;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
