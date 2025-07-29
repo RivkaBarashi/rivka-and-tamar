@@ -4,13 +4,12 @@ body {
   background-image: url("../IMAGE/buckground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center;
-  background-attachment: fixed; */
   font-family: Arial, sans-serif;
   color: white;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: hidden; /* מונע גלגלות אופקית ואנכית */
+  overflow-x: hidden; /* מונע גלגלת אופקית במפורש */
 }
 
 #game {
@@ -57,7 +56,7 @@ canvas#gameCanvas {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 28px;
-  background: rgba(56, 243, 10, 0.895);
+  background: rgba(1, 82, 42, 0.8);
   padding: 20px;
   border-radius: 10px;
   color: white;
@@ -85,8 +84,8 @@ canvas#gameCanvas {
   padding: 8px 20px;
   border-radius: 6px;
   border: none;
-  background: #fc079a;
-  color: #fffdfe;
+  background: #fffdfe;
+  color:  rgba(1, 82, 42, 0.8);
   cursor: pointer;
   outline: none;
   box-shadow: none;
@@ -107,4 +106,31 @@ canvas, img {
   border: none;
   outline: none;
   box-shadow: none;
+}
+
+#startScreen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(1, 82, 42, 0.8) url('../IMAGE/start_background.jpg') no-repeat center center/cover; /* החליפי את הנתיב כאן */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  width: 200px; /* רוחב קבוע לדיב */
+  height: 150px; /* גובה קבוע לדיב */
+  }
+  #startScreen #startBtn {
+  margin-top: 20px; /* מזיז את הכפתור למטה יותר בתוך החלונית למיקום מאוזן */
+  margin-left: auto; /* מרכוז אופקי */
+  margin-right: auto; /* מרכוז אופקי */
+  display: block; /* מאפשר מרכוז עם margin: auto */
+  font-size: 18px;
+  padding: 10px 25px; /* שומר על מרחב פנימי */
+  border-radius: 25px; /* שומר על עגילות */
+  border: none;
+  background:white ; /* מחזיר לצבע אדום-כתום (ניתן לשנות ל-white אם רצית לבן) */
+  color: rgba(1, 82, 42, 0.8); /* טקסט לבן לניגודיות טובה */
+  cursor: pointer;
 }
